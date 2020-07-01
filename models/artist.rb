@@ -26,4 +26,9 @@ class Artist
         discography = result.map {|album| Album.new(album)}
         return discography
     end
+
+    def self.delete_all()
+        sql = "DELETE FROM artists"
+        SqlRunner.run(sql)
+    end
 end

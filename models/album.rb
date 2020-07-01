@@ -29,4 +29,9 @@ class Album
         artist = Artist.new(album_artist)
     end
 
+    def self.delete_all()
+        sql = "DELETE FROM albums"
+        SqlRunner.run(sql)
+    end
+
 end
