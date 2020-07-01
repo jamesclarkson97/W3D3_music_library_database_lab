@@ -43,11 +43,13 @@ album4 = Album.new({
 })
 album4.save()
 
-album3.genre = 'Thrash Metal'
-album3.update_info()
+# album3.genre = 'Thrash Metal'
+# album3.update_info()
 
 # artist2.name = 'Metallica'
 # artist2.update_name
+
+# artist1.delete
 
 
 binding.pry
