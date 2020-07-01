@@ -10,12 +10,12 @@ artist1 = Artist.new({
 })
 artist1.save()
 
-# order1 = PizzaOrder.new({
-#     'quantity' => 2,
-#     'topping' => 'Anchovies',
-#     'customer_id' => customer1.id
-# })
-# order1.save()
+album1 = Album.new({
+    'title' => 'Highway to Hell',
+    'genre' => 'Rock',
+    'artist_id' => artist1.id
+})
+album1.save()
 
 binding.pry
 nil
