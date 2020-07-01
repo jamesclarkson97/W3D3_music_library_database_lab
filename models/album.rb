@@ -21,4 +21,12 @@ class Album
         @id = result[0]['id'].to_i
     end
 
+    def created_by()
+        sql = "SELECT * FROM artists WHERE id = $1"
+        values = [@artist_id]
+        result = SqlRunner.run(sql, values)
+        album_artist = result[0]
+        artist = Artist.new(album_artist)
+    end
+
 end

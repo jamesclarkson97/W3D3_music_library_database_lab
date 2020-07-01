@@ -10,6 +10,11 @@ artist1 = Artist.new({
 })
 artist1.save()
 
+artist2 = Artist.new({
+    'name' => 'Metallica'
+})
+artist2.save()
+
 album1 = Album.new({
     'title' => 'Highway to Hell',
     'genre' => 'Rock',
@@ -23,6 +28,20 @@ album2 = Album.new({
     'artist_id' => artist1.id
 })
 album2.save()
+
+album3 = Album.new({
+    'title' => 'Kill \'em All',
+    'genre' => 'Metal',
+    'artist_id' => artist2.id
+})
+album3.save()
+
+album4 = Album.new({
+    'title' => 'Ride the Lightning',
+    'genre' => 'Metal',
+    'artist_id' => artist2.id
+})
+album4.save()
 
 binding.pry
 nil
