@@ -6,12 +6,12 @@ Album.delete_all()
 Artist.delete_all()
 
 artist1 = Artist.new({
-    'name' => 'AC/DC',
+    'name' => 'AC/DC'
 })
 artist1.save()
 
 artist2 = Artist.new({
-    'name' => 'Metallica'
+    'name' => 'Metallicca'
 })
 artist2.save()
 
@@ -44,8 +44,10 @@ album4 = Album.new({
 album4.save()
 
 album3.genre = 'Thrash Metal'
-album3.update()
+album3.update_info()
 
+# artist2.name = 'Metallica'
+# artist2.update_name
 
 
 binding.pry

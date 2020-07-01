@@ -34,7 +34,7 @@ class Album
         SqlRunner.run(sql)
     end
 
-    def update()
+    def update_info()
         sql = "UPDATE albums SET
         (title, genre, artist_id) 
         = ($1, $2, $3)
