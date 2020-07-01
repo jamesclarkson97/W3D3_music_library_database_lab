@@ -43,5 +43,10 @@ album4 = Album.new({
 })
 album4.save()
 
+album3.genre = 'Thrash Metal'
+album3.update()
+
+
+
 binding.pry
 nil
